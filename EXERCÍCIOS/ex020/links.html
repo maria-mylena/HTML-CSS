@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+
+        #  = ID
+        .  = Class
+        :  = Pseudo-Class
+        :: = Pseudo_Element
+        >  = Chlidren(Filho)
+        */
+        
+        bory{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: blueviolet;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        .especial::before{
+            content: '♦';
+        }
+
+        .especial::before{
+            background-color: color(srgb red green blue);
+        }
+
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/faculdadeimes/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com/FaculdadeIMES" class="especial" >Facebook</a></li>
+        <li><a href="https://api.whatsapp.com/send/?phone=5533998173005&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a></li>
+    </ul>
+</body>
+</html>
